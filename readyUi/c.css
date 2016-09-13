@@ -1,0 +1,272 @@
+
+/*
+    Classes:
+
+
+    Layout:
+    -------
+    rw    = row
+    mn    = main
+    prt   = part
+    prtN  = part in
+    
+
+    Module:
+    -------
+    md    = module
+    mdHd  = module header
+    mdTl  = module title
+    mdBd  = module body
+    mdBdN = module body in
+    mdX   = module extras (footer, archive container)
+    mdRch = module archive
+
+
+    Templates Main:
+    ---------------
+    tmpSng = template > Single      (applied to mdBdN)
+    tmpSib = template > Siblings    (applied to mdBdN)
+    tmpEcl = template > Eclips      (applied to mdBdN)
+    tmpCat = template > Categories  (applied to md)
+    
+    
+    Templates > Singles:
+    --------------------
+    tmpSngMgT = Image Top
+    tmpSngMgR = Image Right
+    tmpSngMgM = Image Middle (before lead)
+    tmpSngMgL = Image Left
+    tmpSngMgB = Image Back
+    tmpSngMgN = Image None
+    (suffixed by int ie hs-tmpSngImgR0, hs-tmpSngImgR1 etc.)
+        
+
+    Templates > Siblings:
+    ---------------------
+    tmpSibCol1233 = template > Columned > 1, 2, 3, 3
+    
+
+    Templates > Eclips:
+    -------------------
+    tmpEclCar = template > Eclips > Carousel
+    (suffixed by int ie hs-tmpEclCar0, hs-tmpEclCar1 etc.)
+    
+
+    Templates > Categories:
+    -----------------------
+    tmpCatTbs = template > Categories > Tabs    
+    tmpCatAcc = template > Categories > Accordion
+
+
+    Item:
+    --------
+    itm     = item
+    itmDt   = item date and time
+    itmSt   = item sup title
+    itmTt   = item title
+    itmLd   = item lead
+    itmTx   = item texts
+    itmBd   = item body   ??
+    itmMg   = item image
+    itmAut  = item author
+    itmNt   = item news type
+
+*/
+
+/*
+    kelas haye ghabele ezfe kardan dar Html, serfan marboot be tarrahi bashe.
+    yani ghabele hazf o ezafe bashe.
+    _8-clr az nazare fanni ghabele hazf nist aps tooye Html nayad.
+ */
+
+/* Accessories {
+
+[clss*='_8-acc-']
+
+ltr
+
+crv3, crv5
+
+Accessories } */
+
+/* General { */
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../f/fontawesome-webfont.eot?v=4.6.3');
+    src: url('../f/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('../f/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('../f/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('../f/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('../f/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "_8-Yekan";
+    src: url(../f/_8-Yekan.eot);
+    src: url(../f/_8-Yekan.eot?#iefix) format("embedded-opentype"), url(../f/_8-Yekan.woff) format("woff"), url(../f/_8-Yekan.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class*='_8-md-'] {
+    font-size: 0;
+}
+
+[class*='_8-'] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /**/
+    margin: 0;
+    padding: 0;
+    /**/
+    direction: rtl;
+    text-align: right;
+    /**/
+    font-family: "_8-Yekan";
+    font-size: 14px;
+    text-decoration: none;
+}
+
+._8-acc-crv3 {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+._8-acc-crv5 {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+a[class*='_8-']:hover{
+    color:red;
+}
+
+/* General } */
+
+._8-md-menuH1 {
+    text-align: center;
+    font-size: 0;
+}
+
+    ._8-md-menuH1:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    ._8-md-menuH1 ._8-itm {
+        display: inline-block;
+        height: 10px;
+        line-height: 10px;
+        padding: 0 10px;
+        border-right: 1px solid black;
+        font-size: 12px;
+        color: black;
+    }
+
+        ._8-md-menuH1 ._8-itm:first-child {
+            border: none;
+        }
+
+    ._8-md-menuH1._8-acc-ltr {
+        direction: ltr;
+    }
+
+        ._8-md-menuH1._8-acc-ltr ._8-itm {
+            border-right: none;
+            border-left: 1px solid black;
+        }
+
+            ._8-md-menuH1._8-acc-ltr ._8-itm:first-child {
+                border: none;
+            }
+
+._8-md-search1 {
+    position: relative;
+    height: 30px;
+    width: 160px;
+    border: 1px solid black;
+    background: white;
+}
+
+    ._8-md-search1 ._8-input {
+        display: block;
+        background: none;
+        border: none;
+        height: 100%;
+        width: 100%;
+        padding: 0 10px 0 30px;
+        font-size: 12px;
+    }
+
+    ._8-md-search1._8-acc-ltr ._8-input {
+        padding: 0 30px 0 10px;
+        text-align: left;
+        direction: ltr;
+    }
+
+    ._8-md-search1 ._8-button {
+        display: block;
+        background: none;
+        border: none;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+    }
+
+    ._8-md-search1._8-acc-ltr ._8-button {
+        left: auto;
+        right: 0;
+    }
+
+    ._8-md-search1 ._8-button:hover {
+        opacity: 0.6;
+    }
+
+    ._8-md-search1 ._8-button:before {
+        content: "\f002";
+        display: inline-block;
+        font-size: 20px;
+        color: black;
+        /**/
+        font-family: "FontAwesome";
+        vertical-align: middle;
+    }
+
+    ._8-md-search1 ._8-button:after {
+        content: "";
+        display: inline-block;
+        width: 1px;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+
+/* views */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    /* SM */
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    /* MD */
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    /* LG */
+
+}
