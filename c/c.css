@@ -1,0 +1,135 @@
+
+/*
+    Classes:
+
+
+    Layout:
+    -------
+    rw    = row
+    mn    = main
+    prt   = part
+    prtN  = part in
+    
+
+    Module:
+    -------
+    md    = module
+    mdHd  = module header
+    mdTl  = module title
+    mdBd  = module body
+    mdBdN = module body in
+    mdX   = module extras (footer, archive container)
+    mdRch = module archive
+
+
+    Templates Main:
+    ---------------
+    tmpSng = template > Single      (applied to mdBdN)
+    tmpSib = template > Siblings    (applied to mdBdN)
+    tmpEcl = template > Eclips      (applied to mdBdN)
+    tmpCat = template > Categories  (applied to md)
+    
+    
+    Templates > Singles:
+    --------------------
+    tmpSngMgT = Image Top
+    tmpSngMgR = Image Right
+    tmpSngMgM = Image Middle (before lead)
+    tmpSngMgL = Image Left
+    tmpSngMgB = Image Back
+    tmpSngMgN = Image None
+    (suffixed by int ie hs-tmpSngImgR0, hs-tmpSngImgR1 etc.)
+        
+
+    Templates > Siblings:
+    ---------------------
+    tmpSibCol1233 = template > Columned > 1, 2, 3, 3
+    
+
+    Templates > Eclips:
+    -------------------
+    tmpEclCar = template > Eclips > Carousel
+    (suffixed by int ie hs-tmpEclCar0, hs-tmpEclCar1 etc.)
+    
+
+    Templates > Categories:
+    -----------------------
+    tmpCatTbs = template > Categories > Tabs    
+    tmpCatAcc = template > Categories > Accordion
+
+
+    Item:
+    --------
+    itm     = item
+    itmDt   = item date and time
+    itmSt   = item sup title
+    itmTt   = item title
+    itmLd   = item lead
+    itmTx   = item texts
+    itmBd   = item body   ??
+    itmMg   = item image
+    itmAut  = item author
+    itmNt   = item news type
+
+*/
+
+/*
+    kelas haye ghabele ezfe kardan dar Html, serfan marboot be tarrahi bashe.
+    yani ghabele hazf o ezafe bashe.
+    _8-clr az nazare fanni ghabele hazf nist aps tooye Html nayad.
+ */
+
+/* Accessories {
+
+[clss*='_8-acc-']
+
+ltr
+
+crv3, crv5
+
+Accessories } */
+
+/* General { */
+
+@font-face {
+    font-family: "_8-Yekan";
+    src: url(../f/_8-Yekan.eot);
+    src: url(../f/_8-Yekan.eot?#iefix) format("embedded-opentype"), url(../f/_8-Yekan.woff) format("woff"), url(../f/_8-Yekan.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+div,
+ul, li,
+a, span {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* General } */
+
+/* views */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    /* SM */
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    /* MD */
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    /* LG */
+
+}
